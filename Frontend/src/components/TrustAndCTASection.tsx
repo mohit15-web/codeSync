@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowRight, Star, Shield, Zap, Users, TrendingUp, Award } from 'lucide-react';
 
-const TrustAndCTASection = ({handleShareClick}) => {
+const TrustAndCTASection = ({ handleShareClick }: { handleShareClick: () => void }) => {
   const stats = [
     {
       icon: Users,

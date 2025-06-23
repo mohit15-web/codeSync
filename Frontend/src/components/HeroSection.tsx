@@ -1,6 +1,6 @@
 
 
-const HeroSection = ({handleShareClick}) => {
+const HeroSection = ({ handleShareClick }: { handleShareClick: () => void }) => {
  
   return (
     <div className="relative bg-white">

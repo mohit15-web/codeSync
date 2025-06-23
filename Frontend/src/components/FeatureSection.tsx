@@ -1,7 +1,7 @@
-import React from 'react';
+
 import { Code, Users, Zap, Shield, Globe, Sparkles } from 'lucide-react';
 
-const FeaturesSection = ({handleShareClick}) => {
+const FeaturesSection = ({ handleShareClick }: { handleShareClick: () => void }) => {
   const features = [
     {
       icon: Code,

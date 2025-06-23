@@ -4,6 +4,8 @@ import TrustAndCTASection from "../components/TrustAndCTASection";
 import { v4 as uuidv4 } from "uuid";
 import Footer from "../components/Footer";
 import Logo from "../assets/Logo.png";
+
+
 const Index = () => {
   const handleShareClick = () => {
     const roomId = uuidv4(); // generates a unique room ID
