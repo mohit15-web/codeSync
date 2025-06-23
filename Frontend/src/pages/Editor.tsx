@@ -17,7 +17,7 @@ const Editor: React.FC = () => {
   const language = 'javascript';
 
   useEffect(() => {
-    const newSocket: Socket = io('http://localhost:8080', {
+    const newSocket: Socket = io('https://codesync-6cqz.onrender.com', {
       transports: ['websocket'],
       reconnectionAttempts: 5,
       forceNew: true,
