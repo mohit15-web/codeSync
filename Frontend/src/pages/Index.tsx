@@ -1,27 +1,26 @@
-import { Code } from "lucide-react";
-
 import HeroSection from "../components/HeroSection";
 import FeaturesSection from "../components/FeatureSection";
 import TrustAndCTASection from "../components/TrustAndCTASection";
 import { v4 as uuidv4 } from "uuid";
 import Footer from "../components/Footer";
+import Logo from "../assets/Logo.png";
 const Index = () => {
-    const handleShareClick = () => {
-        const roomId = uuidv4(); // generates a unique room ID
-        window.location.href = `/${roomId}`;
-      };
-    
+  const handleShareClick = () => {
+    const roomId = uuidv4(); // generates a unique room ID
+    window.location.href = `/${roomId}`;
+  };
+
   return (
     <div className="bg-gradient-to-br from-gray-50 via-white to-blue-50">
       {/* Header */}
       <header className="border-b border-gray-200 bg-white/80 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-primary-500 rounded-lg flex items-center justify-center">
-                <Code className="w-5 h-5 text-white" />
+            <div className="flex items-center">
+              <div className="flex items-center justify-center">
+                <img src={Logo} alt="" className="w-16" />
+                <span className="text-2xl font-bold">CodeSync</span>
               </div>
-              <span className="text-2xl font-bold">CodeSync</span>
             </div>
             <nav className="hidden md:flex items-center space-x-8">
               <a
@@ -106,7 +105,7 @@ const Index = () => {
       <TrustAndCTASection handleShareClick={handleShareClick} />
 
       {/* Footer */}
-      <Footer/>
+      <Footer />
       {/* <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
