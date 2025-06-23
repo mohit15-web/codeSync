@@ -1,13 +1,9 @@
-import React from 'react';
+
 import { 
   Code, 
   Mail, 
   Phone, 
   MapPin, 
-  Twitter, 
-  Github, 
-  Linkedin, 
-  Youtube,
   ArrowRight,
   Heart,
   Shield,
