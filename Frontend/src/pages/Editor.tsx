@@ -11,10 +11,10 @@ interface RoomParams extends Record<string, string | undefined> {
 const Editor: React.FC = () => {
   const { roomId } = useParams<RoomParams>();
   const [code, setCode] = useState<string>('');
-  const [language, setLanguage] = useState<'javascript' | 'python' | 'html' | 'css'>('javascript');
   const [theme, setTheme] = useState<'light' | 'dark'>('dark');
   const [connectedUsers, setConnectedUsers] = useState<number>(1);
   const [socket, setSocket] = useState<Socket | null>(null);
+  const language = 'javascript';
 
   useEffect(() => {
     const newSocket: Socket = io('http://localhost:8080', {
